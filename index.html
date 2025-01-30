@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numetry Technology - IT Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    color: #1e1e1e;
+}
+
+/* Body Styling */
+body {
+    background: #EAE2C6; /* Soft Cream */
+    color: #1e1e1e;
+}
+
+/* Progress Bar */
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 0;
+    background: #2973B2; /* Deep Blue */
+    z-index: 100;
+}
+
+/* Header Styling */
+.header {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #2973B2;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* FullPage Sections */
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.section:nth-child(odd) {
+    background: #98D8EF; /* Sky Blue */
+}
+
+.section:nth-child(even) {
+    background: #48A6A7; /* Teal */
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    font-size: 50px;
+    font-weight: bold;
+    color: #2973B2; /* Deep Blue */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Container for cards - Ensures proper layout */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px;
+}
+
+/* Card Styling */
+.card {
+    background: skyblue; /* Deep Blue */
+    color:black; /* Soft Cream */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+    margin: 15px;
+    width: 260px;
+    height: 150px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: scale(1.1);
+    background: beige; /* Teal */
+    color: #fff;
+}
+
+/* Swiper Container */
+.swiper-container {
+    width: 80%;
+    max-width: 900px;
+    padding: 20px;
+}
+
+/* Swiper Slide Styling */
+.swiper-slide {
+    background: bisque; /* Sky Blue */
+    color: #1e1e1e;
+    padding: 30px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Ensures visibility */
+}
+
+/* Swiper Pagination */
+.swiper-pagination-bullet {
+    background: #2973B2 !important;
+}
+.data-aos{
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        width: 200px;
+        padding: 20px;
+    }
+
+    .swiper-container {
+        width: 90%;
+    }
+}
+
+.l{
+
+    font-family:sans-serif;
+    color: aliceblue;
+    font-size:xx-large;
+}
+
+/* Footer */
+.footer {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color:skyblue;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+    </style>
+    
+</head>
+<body>
+    <div class="progress-bar" id="progress-bar"></div>
+    <div class="header">Numetry Technology</div>
+    <div id="fullpage">
+        <div class="section s1" data-aos="fade-up">
+            <h1 class="hero">Numetry Technologies - Innovating IT Solutions</h1>
+            <img src="./numetry_technologies_logo.jpeg"/>
+        </div>
+        <div class="section s2">
+            <h1 class="l">Services</h1>
+
+            <div class="card">
+                <div class="container" >
+                  <h3><b>Web Development</b></h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="container">
+                  <h3><b>Cloud Services</b></h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="container">
+                  <h3><b>Data Analysis</b></h3>
+                </div>
+            </div>
+        </div>
+        <div class="section s3">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">"Numetry provided us with cutting-edge IT solutions!"</div>
+                    <div class="swiper-slide">"Excellent service and great support!"</div>
+                    <div class="swiper-slide">"Best IT company we've worked with!"</div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">&copy; 2025 Numetry Technology - All Rights Reserved</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Initialize FullPage.js
+            new fullpage("#fullpage", {
+                autoScrolling: true,
+                navigation: true,
+                
+                anchors: ["home", "services", "testimonials"],
+                scrollOverflow: true
+            });
+    
+            // Initialize AOS
+            AOS.init({
+                    once: true,
+                    duration : 1000,
+                    easing: "ease-in-out",
+            });
+            
+            var swiper = new Swiper('.swiper-container', {
+                pagination: { el: '.swiper-pagination', clickable: true },
+                autoplay: { delay: 3000, disableOnInteraction: false },
+                loop: true,
+             });
+            // Scroll progress bar
+            window.onscroll = function () {
+                document.getElementById("progress-bar").style.width =
+                    (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100 + "%";
+            };
+        });
+    </script>
+    
+</body>
+</html>
